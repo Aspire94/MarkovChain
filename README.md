@@ -25,3 +25,6 @@ clone the complete directory and open up the console, to start type:
 ```
 node index.js
 ```
+## Running the tests
+
+Open up your browser and go to http://localhost:8080/
