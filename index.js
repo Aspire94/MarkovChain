@@ -1,13 +1,9 @@
 var http = require('http');
-var dt = require('./myModule/date.js');
 var fs = require('fs');
 var text = "";
 const say = require('say');
 
-
-
-
-// Markov shizzle
+// Markov
 const Markov = require('markov-strings');
 const data = [
     "Alice was beginning to get very tired of sitting by her sister on the bank, and of having nothing to do. Once or twice she had peeped into the book her sister        was reading, but it had no pictures or conversations in it, and what is the use of a book, thought Alice, without pictures or conversations?", 
@@ -16,7 +12,6 @@ const data = [
 "The rabbit-hole went straight on like a tunnel for some way and then dipped suddenly down, so suddenly that Alice had not a moment to think about stopping herself before she found herself falling down what seemed to be a very deep well.",
 "Either the well was very deep, or she fell very slowly, for she had plenty of time, as she went down, to look about her. First, she tried to make out what she was coming to, but it was too dark to see anything; then she looked at the sides of the well and noticed that they were filled with cupboards and book-shelves here and there she saw maps and pictures hung upon pegs. She took down a jar from one of the shelves as she passed. It was labeled ORANGE MARMALADE, but, to her great disappointment, it was empty; she did not like to drop the jar, so managed to put it into one of the cupboards as she fell past it."
 ];
-
 const options = {
     maxLenght: 50,
     minWords: 10,
@@ -40,7 +35,6 @@ markov.buildCorpus().then(() => {
     }
 });
 
-
 //server object
 http.createServer(function (req, res) {
     fs.readFile('data.html', function(err, data){
@@ -51,5 +45,4 @@ http.createServer(function (req, res) {
         res.end();
         text = "";
                 });
-
 }).listen(8080);
