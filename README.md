@@ -1,8 +1,23 @@
 # MarkovChainSay
-Markov-chains + say module.
-# Install guide (clone)
-Clone folder and run console. Type node index.js to start the server. To view the webpage go to http://localhost:8080/
-# Install guide (copy)
-Download and move data.html and index.js to a folder and manually install these node.js modules: 
-npm install --save markov-strings
-npm install say
+
+Markov-strings + say module.
+
+## Getting Started
+
+These instructions will get you a copy of the project up and running on your local machine for development and testing purposes.
+
+### Prerequisites
+
+You will need these node.js modules if you only copy the index.js and data.html
+
+```
+npm install --save markov-strings and npm install say
+```
+
+### Installing (1)
+
+Clone the complete directory and open up the console, to start type:
+
+```
+node index.js
+```
