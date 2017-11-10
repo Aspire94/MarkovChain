@@ -11,7 +11,10 @@ These instructions will get you a copy of the project up and running on your loc
 You will need node.js installed (and these node.js modules if you only copy html and js file).
 
 ```
-npm install --save markov-strings and npm install say
+npm install --save markov-strings
+```
+```
+npm install say
 ```
 
 ### Installing
