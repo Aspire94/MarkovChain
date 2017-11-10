@@ -8,7 +8,7 @@ These instructions will get you a copy of the project up and running on your loc
 
 ### Prerequisites
 
-You will need these node.js modules if you only copy the index.js and data.html
+You will need node.js installed (and these node.js modules if you only copy html and js file).
 
 ```
 npm install --save markov-strings and npm install say
