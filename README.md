@@ -14,9 +14,10 @@ You will need these node.js modules if you only copy the index.js and data.html
 npm install --save markov-strings and npm install say
 ```
 
-### Installing (1)
+### Installing
 
-Clone the complete directory and open up the console, to start type:
+Copy the index.js and data.html and install the necessary modules or
+clone the complete directory and open up the console, to start type:
 
 ```
 node index.js
